@@ -5,9 +5,8 @@
 */
 
 const getArrayOfNumerals = (number) => {
-    let getArray = [];
-    let convMinus = ( number < 0 ) ? -number : number;
-    let strNumber = convMinus.toString();
+    const getArray = [];
+    const strNumber = Math.abs(number).toString();
     
     
     for(let i = 0; i < strNumber.length; i++) {
